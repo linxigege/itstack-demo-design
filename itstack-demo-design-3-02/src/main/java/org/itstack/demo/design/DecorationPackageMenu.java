@@ -57,7 +57,8 @@ public class DecorationPackageMenu implements IMenu {
                 "材料清单：\r\n");
 
         for (Matter matter: list) {
-            detail.append(matter.scene()).append("：").append(matter.brand()).append("、").append(matter.model()).append("、平米价格：").append(matter.price()).append(" 元。\n");
+            detail.append(matter.scene()).append("：").append(matter.brand()).append("、").append(matter.model()).append("、平米价格：")
+                    .append(matter.price()).append(" 元。\n");
         }
 
         return detail.toString();
